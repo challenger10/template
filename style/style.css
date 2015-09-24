@@ -108,6 +108,7 @@ input[type=text],[type=email],[type=url],[type=search] {
     input[type=search] { 
         margin-top: 20px;
         margin-bottom: -40px;
+    }   
 }
 textarea {
     border: 1px solid #acacac;   
@@ -200,7 +201,7 @@ h2 {
         float: left;
         width: 100%;
         }
-}    
+}
 .bas_millieu {
     margin-left: 57px;
     float: left;
@@ -211,7 +212,7 @@ h2 {
         width: 100%; 
         margin-left: 0;
     }
-} 
+}
 .bas_millieu h2 {
     text-transform: uppercase;  
 }
