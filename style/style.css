@@ -12,6 +12,12 @@ html {
     width: 1150px;
     margin: auto;
 }
+@media (max-width:768px) {
+    #page {
+        width: 100%;
+        margin: auto;
+    }
+}
 nav#menu_principal {
     margin-top: 30px;   
 }
@@ -45,6 +51,12 @@ h1 {
 }
 .titre {
     margin-top: 35px;   
+    margin-bottom: -30px;
+}
+@media (max-width:768px) {
+    .titre {
+        font-size: 2.4em;
+    }
 }
 h1.contact {
     font-weight: 600;
@@ -61,6 +73,11 @@ section.formulaire {
     float: left;
     position:relative;
     width: 575px;
+}
+@media (max-width:768px) {
+    .gauche {
+        width: 100%;
+    }
 }
 label {
     font-family: 'Open Sans', sans-serif;
@@ -82,6 +99,16 @@ input[type=text],[type=email],[type=url],[type=search] {
     text-transform: uppercase;
     margin-bottom: 15px;
 }
+@media (max-width:768px) {
+    input[type=text],[type=email],[type=url],[type=search] {
+        width: 96%;
+    }
+}
+@media (max-width:768px) {
+    input[type=search] { 
+        margin-top: 20px;
+        margin-bottom: -40px;
+}
 textarea {
     border: 1px solid #acacac;   
     display: block;
@@ -94,6 +121,11 @@ textarea {
     background: #000;  
     opacity: 0.35;
     margin-bottom: 15px;
+}
+@media (max-width:768px) {
+    textarea {
+        width: 96%;
+    }
 }
 button {
     height: 40px;
@@ -117,6 +149,12 @@ button:after{
     float: left;
     margin-left: 240px;
     width: 332px;
+}
+@media (max-width:768px) {
+    .droite {
+        margin-left: 0;
+        width: 100%;
+    } 
 }
 h1.news {
     text-align: left;
@@ -157,23 +195,41 @@ h2 {
     float: left;
     width: 350px;
 }
+@media (max-width:768px) {
+    .bas_gauche {
+        float: left;
+        width: 100%;
+        }
+}    
 .bas_millieu {
     margin-left: 57px;
     float: left;
     width: 350px;
 }
+@media (max-width:768px) {
+    .bas_millieu  {
+        width: 100%; 
+        margin-left: 0;
+    }
+} 
 .bas_millieu h2 {
     text-transform: uppercase;  
-}
-.bas_droite {
-    margin-left: 57px;
-    float: left;
-    width: 330px;
 }
 .bas_millieu img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+} 
+.bas_droite {
+    margin-left: 57px;
+    float: left;
+    width: 330px;
+}
+@media (max-width:768px) {
+    .bas_droite {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 h1.about {
     text-align: left;
@@ -184,6 +240,12 @@ h1.about {
 nav#icones {
     width: 600px;
     margin: auto;
+}
+@media (max-width:768px) {
+    nav#icones {
+        width: 100%;
+        margin-left: -10px;
+    }     
 }
 nav#icones ul {
     text-align: center;
@@ -205,4 +267,9 @@ h3 {
     font-size: 14px;
     text-transform: uppercase;
     color: #fff;
+}
+@media (max-width:768px) {
+    h3 {
+        font-size: 10px; 
+    }
 }
