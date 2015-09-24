@@ -1,0 +1,208 @@
+html { 
+    margin: 0;
+    margin-top: 0;
+    background: url(../images/background.jpg) no-repeat center fixed; 
+    background-size: cover;
+    background-position: 0% 50%;
+    opacity: 1;
+    filter:alpha(opacity=1);
+    box-shadow: inset 0px 0px 400px 400px rgba(0,0,0,0.7);
+}
+#page {
+    width: 1150px;
+    margin: auto;
+}
+nav#menu_principal {
+    margin-top: 30px;   
+}
+nav#menu_principal ul{
+    text-align: center;
+}
+nav#menu_principal ul li {
+    list-style-type: none;
+    text-transform: uppercase; 
+    display: inline;
+    margin-right: 35px;
+    color: #ddd;
+}
+nav#menu_principal ul li a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    color: #ddd;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #fff;
+}
+.titre {
+    margin-top: 35px;   
+}
+h1.contact {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 60px;
+}
+.ligne_horizontale {
+    border-top:1px solid #fff;    
+}
+section.formulaire {
+    margin-top: 40px;
+}
+.gauche {
+    float: left;
+    position:relative;
+    width: 575px;
+}
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ddd;    
+}
+input[type=text],[type=email],[type=url],[type=search] {
+    border: 1px solid #acacac;   
+    display: block;
+    width: 325px;
+    height: 40px;
+    background: #000;
+    opacity: 0.35;
+    font-size: 18px;
+    padding-left: 5px;
+    color: #ddd;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+textarea {
+    border: 1px solid #acacac;   
+    display: block;
+    width: 600px;
+    height: 200px;
+    font-size: 18px;
+    padding-left: 5px;
+    color: #ddd;
+    text-transform: uppercase;
+    background: #000;  
+    opacity: 0.35;
+    margin-bottom: 15px;
+}
+button {
+    height: 40px;
+    width: 120px;
+    margin-bottom: 20px;
+    background: #222;
+    border: 1px solid #acacac; 
+    color: #ddd;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button:after{
+    content:" >>";
+}
+.droite {
+    float: left;
+    margin-left: 240px;
+    width: 332px;
+}
+h1.news {
+    text-align: left;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 60px;
+}
+h2 {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+#texte_news {
+    margin-top: -10px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color:#ddd;   
+}
+#date_news {
+    margin-top: -10px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color:#666;   
+}
+.clear {
+    clear: both;   
+}
+.bas_gauche {
+    float: left;
+    width: 350px;
+}
+.bas_millieu {
+    margin-left: 57px;
+    float: left;
+    width: 350px;
+}
+.bas_millieu h2 {
+    text-transform: uppercase;  
+}
+.bas_droite {
+    margin-left: 57px;
+    float: left;
+    width: 330px;
+}
+.bas_millieu img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+h1.about {
+    text-align: left;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 20px;
+}
+nav#icones {
+    width: 600px;
+    margin: auto;
+}
+nav#icones ul {
+    text-align: center;
+    margin-left: -15px;
+}
+nav#icones ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+}
+.fa {
+    color: #fff;
+}
+h3 {
+    text-align: center;  
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
