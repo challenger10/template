@@ -43,6 +43,60 @@ nav#menu_principal ul li a {
 nav#menu_principal ul li a.active {
     font-weight: 600;
 }
+/* DEBUT MENU BURGER */
+.burger{
+	position:relative;
+    margin: auto;
+	width:100px;
+	height:20px;
+    right: 10px;
+    top: -20px;
+	cursor:pointer;
+    display: none;
+}
+#btn {
+    display: none;
+}
+@media (max-width:768px) {
+    .burger{	
+	    display:block;
+}
+    .burger::after{
+        position: absolute;
+        content: " menu";
+        text-transform: uppercase;
+        margin-top: 3px;
+        margin-left: 2px;
+        line-height: 20px;
+        font-size: 24px;
+    } 
+    #btn {
+        display: none;
+    }
+[id^=btn]:checked + ul { display: block; }
+    nav ul {
+        display:none;
+    }
+    nav#menu_principal ul {
+        margin: auto;
+        margin-top: 0px;
+        margin-left: -50px;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        width: 220px;
+    }
+    nav#menu_principal ul li {
+        display: block;
+        width: 200px;
+        height: 25px;
+        background: #000;
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+    }
+}
+/* FIN MENU BURGER */
+
 /* FIN NAVIGATION */
 h1 {
     font-family: 'Open Sans', sans-serif;
