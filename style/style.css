@@ -18,6 +18,7 @@ html {
         margin: auto;
     }
 }
+/* DEBUT NAVIGATION */
 nav#menu_principal {
     margin-top: 30px;   
 }
@@ -39,6 +40,10 @@ nav#menu_principal ul li a {
     font-size: 1em;
     color: #ddd;
 }
+nav#menu_principal ul li a.active {
+    font-weight: 600;
+}
+/* FIN NAVIGATION */
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -79,6 +84,7 @@ section.formulaire {
         width: 100%;
     }
 }
+/* DEBUT FORMULAIRE DE CONTACT */
 label {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -97,7 +103,7 @@ input[type=text],[type=email],[type=url],[type=search] {
     padding-left: 5px;
     color: #ddd;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: -5px;
 }
 @media (max-width:768px) {
     input[type=text],[type=email],[type=url],[type=search] {
@@ -110,6 +116,9 @@ input[type=text],[type=email],[type=url],[type=search] {
         margin-bottom: -40px;
     }   
 }
+input[type=url] {
+    margin-bottom: 15px;
+}
 textarea {
     border: 1px solid #acacac;   
     display: block;
@@ -121,7 +130,7 @@ textarea {
     text-transform: uppercase;
     background: #000;  
     opacity: 0.35;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 @media (max-width:768px) {
     textarea {
@@ -132,6 +141,7 @@ button {
     height: 40px;
     width: 120px;
     margin-bottom: 20px;
+    margin-top: 3px;
     background: #222;
     border: 1px solid #acacac; 
     color: #ddd;
@@ -146,6 +156,43 @@ button {
 button:after{
     content:" >>";
 }
+/* TOOLTIPS */
+input:focus {
+    box-shadow: 0 0px 15px 0px red;
+	}
+.correct {
+    box-shadow: 0 0px 15px 0px green;
+	}
+.correct:focus {
+    box-shadow: 0 0px 15px 0px green;
+	}
+.incorrect {
+    box-shadow: 0 0px 15px 0px red;
+	}
+.incorrect:focus {
+    box-shadow: 0 0px 15px 0px red;
+	}
+.infosBulle {
+    position: absolute;
+	display: block;
+    margin-left: -3px;
+    margin-top: 3px;
+    width: 300px;
+	padding: 2px 4px;
+    color: red;
+    font-size: 12px;
+    text-transform: uppercase;
+	}
+@media (max-width:768px) {
+    .infosBulle {
+        margin-top: 3px;
+        } 
+}    
+.required {
+    font-size: 15px;
+    font-weight: 300;
+}
+/* FIN FORMULAIRE DE CONTACT */
 .droite {
     float: left;
     margin-left: 240px;
