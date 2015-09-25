@@ -22,15 +22,15 @@
         var check = {};
 
         check['nom'] = function(id) {
-            var name = document.getElementById(id),
-                infosBullesStyle = getInfosBulles(name).style;
+            var nom = document.getElementById(id),
+                infosBullesStyle = getInfosBulles(nom).style;
             
-            if (name.value.length >= 2) {
-                name.className = 'correct';
+            if (nom.value.length >= 2) {
+                nom.className = 'correct';
                 infosBullesStyle.display = 'none';
                 return true;
             } else {
-                name.className = 'incorrect';
+                nom.className = 'incorrect';
                 infosBullesStyle.display = 'inline-block';
                 return false;
             }
