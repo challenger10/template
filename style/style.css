@@ -78,23 +78,28 @@ nav#menu_principal ul li a.active {
     nav ul {
         display:none;
     }
+    nav#icones ul {
+        display: block;
+    }
     nav#menu_principal ul {
         margin: auto;
         margin-top: 0px;
-        margin-left: -50px;
-        border-top: 1px solid #fff;
-        border-right: 1px solid #fff;
-        width: 220px;
-    }
+        margin-left: -4px;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        width: 176px;
+}
     nav#menu_principal ul li {
         display: block;
-        width: 200px;
+        width: 195px;
         height: 25px;
         background: #000;
         text-align: left;
+        margin-left: -40px;
         padding: 10px;
-        border-bottom: 1px solid #fff;
-    }
+        border-bottom: 1px solid #ccc;
+    }  
 }
 /* FIN MENU BURGER */
 
