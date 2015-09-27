@@ -131,11 +131,11 @@ nav#menu_principal ul li a.active {
         border-top: 1px solid #222;
         border-left: 1px solid #222;
         border-right: 1px solid #222;
-        width: 80%;
+        width: 90%;
     }
     nav#menu_principal ul li {
         display: block;
-        width: 260px;
+        width: 100%;
         background: #000;
         text-align: left;
         margin-left: -40px;

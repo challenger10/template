@@ -58,10 +58,7 @@
                 for (var i in check) {
                     result = check[i](i) && result;
                 }
-        
-                if (result) {
-                    alert('Le formulaire est bien rempli.');
-                }
+                //document.location.href="index.html";
                 e.preventDefault();
         
             }, false);
