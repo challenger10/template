@@ -58,7 +58,7 @@ nav#menu_principal ul li a.active {
     left: -20px;
     background: #000;
     margin-top: 10px; 
-    height: 125px;
+    height: 147px;
     width: 195px;
 }
 .sous_menu:before {
@@ -72,11 +72,11 @@ nav#menu_principal ul li a.active {
     display:block; 
     text-align: left;
     margin-left:-40px;
-    margin-top: -24px;
+    margin-top: -22px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ccc; 
+    border-bottom: 1px solid #222222; 
     padding-left: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 .sous_menu li a:hover {
     font-weight: 600;
@@ -128,9 +128,9 @@ nav#menu_principal ul li a.active {
         margin: auto;
         margin-top: 0px;
         margin-left: 5px;
-        border-top: 1px solid #ccc;
-        border-left: 1px solid #ccc;
-        border-right: 1px solid #ccc;
+        border-top: 1px solid #222;
+        border-left: 1px solid #222;
+        border-right: 1px solid #222;
         width: 80%;
     }
     nav#menu_principal ul li {
@@ -140,7 +140,7 @@ nav#menu_principal ul li a.active {
         text-align: left;
         margin-left: -40px;
         padding: 10px;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #222;
     }   
     nav#menu_principal ul li a:hover {
         font-weight: 600;
