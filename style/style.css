@@ -1,3 +1,6 @@
+* {
+   font-family:'Open sans';
+}  
 body { 
     margin: 0;
     margin-top: 0;
@@ -35,13 +38,53 @@ nav#menu_principal ul li {
 }
 nav#menu_principal ul li a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1em;
     color: #ddd;
 }
 nav#menu_principal ul li a.active {
+    font-weight: 600;
+}
+.music:hover {
+    position: relative;
+}
+.music:hover .sous_menu {
+    display: block;
+}
+.sous_menu {
+    display: none;
+    position: absolute; 
+    left: -20px;
+    background: #000;
+    margin-top: 10px; 
+    height: 125px;
+    width: 195px;
+}
+.sous_menu:before {
+    content:url("../images/fleche_haut.png");
+    position:relative; 
+    left:-105px; 
+    top: -30px;
+}
+.sous_menu li a {
+    text-transform: capitalize;
+    display:block; 
+    text-align: left;
+    margin-left:-40px;
+    margin-top: -24px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc; 
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.sous_menu li a:hover {
+    font-weight: 600;
+}
+#menu_principal.sous_menu li:last-child {
+    border-bottom: red;
+}
+#menu_principal.sous_menu li a:hover {
     font-weight: 600;
 }
 /* DEBUT MENU BURGER */
@@ -84,28 +127,32 @@ nav#menu_principal ul li a.active {
     nav#menu_principal ul {
         margin: auto;
         margin-top: 0px;
-        margin-left: -4px;
+        margin-left: 5px;
         border-top: 1px solid #ccc;
         border-left: 1px solid #ccc;
         border-right: 1px solid #ccc;
-        width: 176px;
-}
+        width: 80%;
+    }
     nav#menu_principal ul li {
         display: block;
-        width: 195px;
-        height: 25px;
+        width: 260px;
         background: #000;
         text-align: left;
         margin-left: -40px;
         padding: 10px;
         border-bottom: 1px solid #ccc;
-    }  
+    }   
+    nav#menu_principal ul li a:hover {
+        font-weight: 600;
+    }
+    nav#menu_principal ul.sous_menu {
+        display: none;
+    }
 }
 /* FIN MENU BURGER */
 
 /* FIN NAVIGATION */
 h1 {
-    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 60px;
@@ -146,7 +193,7 @@ section.formulaire {
 }
 /* DEBUT FORMULAIRE DE CONTACT */
 label {
-    font-family: 'Open Sans', sans-serif;
+
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -205,7 +252,6 @@ button {
     background: #222;
     border: 1px solid #acacac; 
     color: #ddd;
-    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -272,7 +318,6 @@ h1.news {
 }
 h2 {
     text-align: left;
-    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -281,7 +326,6 @@ h2 {
 #texte_news {
     margin-top: -10px;
     text-align: left;
-    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -290,7 +334,7 @@ h2 {
 #date_news {
     margin-top: -10px;
     text-align: left;
-    font-family: 'Open Sans', sans-serif;
+
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -356,10 +400,12 @@ nav#icones {
     }     
 }
 nav#icones ul {
+    margin-left: 0;
     text-align: center;
     margin-left: -15px;
 }
 nav#icones ul li {
+
     list-style-type: none;
     display: inline;
     margin-right: 20px;
@@ -369,7 +415,6 @@ nav#icones ul li {
 }
 h3 {
     text-align: center;  
-    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
