@@ -3,21 +3,24 @@
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="Home.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style/normalize.css"/>
+        <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.css"/>
         <title>Home Page</title>
     </head>
     <body>
         <div id="opacity">
             <header>
                 <nav>
-                    <ul>
-                        <ol>HOME</ol>
-                        <ol>BIO</ol>
-                        <ol>PHOTOS</ol>
-                        <ol>MUSIC</ol>
-                        <ol>VIDEOS</ol>
-                        <ol>NEWS</ol>
-                        <ol>TOUR</ol>
-                        <ol>CONTACT</ol>
+                    <ul id="lien_nav">
+                        <ol><a class="active" href="">HOME</a></ol>
+                        <ol><a href="Bio.html">BIO</a></ol>
+                        <ol><a href="Photos/Photos.html">PHOTOS</a></ol>
+                        <ol><a href="Music.html">MUSIC</a></ol>
+                        <ol><a href="Videos">VIDEOS</a></ol>
+                        <ol><a href="News">NEWS</a></ol>
+                        <ol><a href="Tour">TOUR</a></ol>
+                        <ol><a href="contact.html">CONTACT</a></ol>
                     </ul>
                 </nav>
             </header>
@@ -33,7 +36,7 @@
                         <h2>About Obsidian</h2>
                     </div>
                     <div>
-                        <p>The Obsidian theme, like the naturally occurring volcanic glass of the same name, possesses an inherent allure that's stylish in appearance and practical in purpose. With distinctive background options and various customization possibilities, Obsidian makes it easy to create the ultimate hub for your online identity.</p>
+                        <p>The <em>Obsidian</em> theme, like the naturally occurring volcanic glass of the same name, possesses an inherent allure that's stylish in appearance and practical in purpose. With distinctive background options and various customization possibilities, <em>Obsidian</em> makes it easy to create the ultimate hub for your online identity.</p>
                     </div>
                 </div>
                 
@@ -42,7 +45,7 @@
                         <h2>Vivienne’s Omitted Line</h2>
                     </div>
                     <div id="image">
-                        <span><img src="images/album-03-300x300.jpg"/></span>
+                        <img src="images/album-03-300x300.jpg"/>
                     </div>
                 </div>
                 
@@ -51,15 +54,31 @@
                         <h2>Recent Posts</h2>
                     </div>
                     <div>
-                        <p>New tour dates posted</p>
-                        <p>December 16, 2014</p>
-                        <p>History of Popular Music</p>
-                        <p>December 15, 2014</p>
-                        <p>The reviews are rolling in…</p>
-                        <p>December 15, 2014</p>
+                        <p><a href="News.html">New tour dates posted</a></p>
+                        <span>December 16, 2014</span>
+                        <p><a href="New.html">History of Popular Music</a></p>
+                        <span>December 15, 2014</span>
+                        <p><a href="News.html">The reviews are rolling in…</a></p>
+                        <span>December 15, 2014</span>
                     </div>
                 </div>
             </div>
+        
+            <nav id="social_network">
+                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a> 
+                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://vimeo.com/"><i class="fa fa-vimeo"></i></a>
+                <a href="http://www.amazon.fr/"><i class="fa fa-amazon"></i></a>
+                <a href="http://www.apple.com/fr/"><i class="fa fa-apple"></i></a>
+                <a href="https://soundcloud.com/"><i class="fa fa-soundcloud"></i></a>
+                <a href="https://www.spotify.com/fr/"><i class="fa fa-spotify"></i> </a>               
+            </nav>
+            <div id="span">
+                <span><a href="https://fr.wordpress.com/">Blog at WordPress.com.</a> | <a href="https://wordpress.com/themes/obsidian/">The Obsidian Theme</a> by <a href="http://www.cedaro.com/">Cedaro.</a> </span>
+            </div>
+               
         </div>
     </body>
 </html>

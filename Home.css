@@ -1,0 +1,183 @@
+body
+{
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-image: url("images/background.jpg");
+	background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;	  
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#opacity
+{
+    
+    z-index: -1;
+	opacity: 0.70;
+    background-color: black;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    padding-bottom: 100px;
+    margin-bottom: 0px;    
+}
+    
+
+header {    
+    position: relative;
+    text-align: center; 
+    text-transform: uppercase;
+	padding-bottom: 50px;
+    padding-top: 50px;    
+}
+
+/*Navigation*/
+nav ul ol
+{
+    display: inline-block;
+    color: inherit;
+    
+}
+
+.active { 
+    font-weight:700;   
+	color: rgba(255, 255, 255, 1);
+}
+
+a:link
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+img
+{
+    opacity: none;
+}
+#titre
+{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+#titre h1
+{
+    color: #FFF;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4.25em;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#titre p
+{
+    margin-top: -40px;
+    opacity: 1;
+    letter-spacing: 0.1em;
+}
+/*Footer*/
+#footer
+{
+    display: inline-block;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: 130px;
+    margin-right: 130px;
+    padding-bottom: 50px;
+    
+}
+#about
+{
+    display: inline-block;
+    width: 33%;
+    float: left;
+    padding-right: 10px;
+}
+
+#about div p
+{
+    font-size: large;
+    text-align: left;
+    
+}
+
+#about div h2
+{
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.625em;
+    margin-top: 60px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#vivienne
+{
+    display: inline-block;
+    width: 33%;
+    float: left;
+}
+
+#vivienne div h2
+{
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.625em;
+    margin-top:60px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#recent
+{
+    display: inline-block;
+    width: 33%;
+    float: left;
+}
+
+#recent div h2
+{
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.625em;
+    margin-top: 60px;
+    text-transform: uppercase;
+    color: white;
+}
+#recent div span
+{
+    opacity: 0.60;
+}
+
+#social_network
+{
+    text-align: center;
+    letter-spacing: 0.5em;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+#span
+{
+    color: #FFF;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    line-height: 1.53846;
+    text-align: center;
+    text-transform: uppercase;
+}
