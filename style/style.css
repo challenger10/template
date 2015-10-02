@@ -1,3 +1,11 @@
+	@font-face {
+	font-family: "themicons";
+	src: url("../polices/themicons/themicons.woff2") format("woff2"),
+		url("../polices/themicons/themicons.woff") format("woff"),
+		url("../polices/themicons/themicons.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
 * {
    font-family:'Open sans';
 }  
@@ -49,10 +57,10 @@ nav#menu_principal ul li a.active {
 .music:hover {
     position: relative;
 }
-.music:hover .sous_menu {
+.music:hover #sous_menu {
     display: block;
 }
-.sous_menu {
+#sous_menu {
     display: none;
     position: absolute; 
     left: -20px;
@@ -61,13 +69,13 @@ nav#menu_principal ul li a.active {
     height: 147px;
     width: 195px;
 }
-.sous_menu:before {
+#sous_menu:before {
     content:url("../images/fleche_haut.png");
     position:relative; 
     left:-105px; 
     top: -30px;
 }
-.sous_menu li a {
+#sous_menu li a {
     text-transform: capitalize;
     display:block; 
     text-align: left;
@@ -78,8 +86,14 @@ nav#menu_principal ul li a.active {
     padding-left: 10px;
     padding-bottom: 15px;
 }
-.sous_menu li a:hover {
+#sous_menu li a:hover {
     font-weight: 600!IMPORTANT;
+}    
+#btn_plus {
+    display: none;
+}
+#btn_moins {
+    display: none;
 }
 /* DEBUT MENU BURGER */
 .fa-lg {
@@ -97,9 +111,6 @@ nav#menu_principal ul li a.active {
     display: none;
 }
 #btn {
-    display: none;
-}
-.divMusic {
     display: none;
 }
 @media (max-width:768px) {
@@ -146,42 +157,103 @@ nav#menu_principal ul li a.active {
     nav#menu_principal ul li a:hover {
         font-weight: 600;
     }
-    nav#menu_principal ul.sous_menu {
-        display: block;                              /* PROVISOIRE */
-        position: inherit;
-        margin-left: -40px;
-        margin-top: 43px;
-        margin-bottom: 0px;
+    nav#menu_principal ul#sous_menu {
+        display: none;
+        position:inherit;
+        margin-left: 10px;
+        margin-top: 48px;
+        margin-bottom: -12px;
         border: 0;
         height: 130px;
     }
-    .sous_menu:before {
+    nav#menu_principal ul#sous_menu a:hover{  
+        margin-left: 20px;
+    }
+    nav#menu_principal ul li:nth-child(4) {
+         height: 20px;   
+    }
+    /* BOUTONS MUSIC */
+    #btn_plus {
+        background: transparent;
+        border-left: 0px solid rgba(255, 255, 255, 0.2);
+        border-width: 0 0 0 0px;
+        display: block;
+        overflow: hidden;
+        padding: 0;
+        position: inherit;
+        margin-left: 206px;
+        margin-top: -32px;
+        margin-bottom: -50px;
+        text-align: center;
+        width: 43px;
+        height: 41px;
+        cursor: pointer;
+    }
+    #btn_plus:before {
+        position: absolute;
+        display: block;
+        font-family: 'themicons';
+        content: "\f119";  
+        margin-top: -21px;
+        margin-left: 30px;
+        border-left: 1px solid #333;
+        border-bottom: 1px solid #333;
+        background: #000;
+        color: #fff;
+        width: 42px;
+        height: 40px;
+        font-size: 1.6rem;
+        line-height: 43px;
+    } 
+    #btn_plus:hover {
+        margin-top: -32px!important;   
+    }
+    #btn_moins {
+        background: transparent;
+        border-left: 0px solid rgba(255, 255, 255, 0.2);
+        border-width: 0 0 0 0px;
+        display: none;
+        overflow: hidden;
+        padding: 0;
+        position: inherit;
+        margin-left: 205px;
+        margin-top: -32px;
+        margin-bottom: -50px;
+        text-align: center;
+        width: 44px;
+        height: 42px;
+        cursor: pointer;
+    }
+    #btn_moins:before {
+        position: absolute;
+        display: block;
+        font-family: 'themicons';
+        content: "\f20c";  
+        margin-top: -21px;
+        margin-left: 30px;
+        border-left: 1px solid #333;
+        border-bottom: 1px solid #333;
+        background: #333;
+        color: #fff;
+        width: 44px;
+        height: 40px;
+        font-size: 1.6rem;
+        line-height: 43px;
+    } 
+    #btn_moins:hover {
+        margin-top: -32px!important;   
+    }
+/* FIN BOUTONS MUSIC */
+    
+    #sous_menu:before {
         content:''; /* supprime la flêche bulle du menu music */
     }
-    .music:before {
-        content: '+'; 
-        font-size: 24px;
-        width: 30px;
-        margin-right: -10px;
-        margin-top: -10px;
-        border-left: 1px solid #333;
-        padding: 5px 5px 5px 15px;
-        float: right;
-    }
-    .music:hover {
-        margin-left: -40px!important; 
-    }
-    .music ul:hover {
-        margin-left: 10px!important;   
-    }
-    .music li:hover {
-        margin-left: -40px!important;   
-    }
-    nav#menu_principal ul.sous_menu li{
+    nav#menu_principal ul#sous_menu li{
         background: #333;  
-        width: 270px;
+        width: 269px;
+        border-left: 1px solid #000;
     }
-    nav#menu_principal ul.sous_menu li a {
+    nav#menu_principal ul#sous_menu li a {
         margin-left: 0px;
         margin-top: 0px;
         margin-bottom: 0;
@@ -292,7 +364,7 @@ textarea {
         width: 96%;
     }
 }
-button {
+button.btn_frm {
     height: 40px;
     width: 120px;
     margin-bottom: 20px;
@@ -307,7 +379,7 @@ button {
     text-transform: uppercase;
     cursor: pointer;
 }
-button:after{
+button.btn_frm:after{
     content:" >>";
 }
 /* TOOLTIPS */
@@ -473,4 +545,8 @@ h3 {
     h3 {
         font-size: 10px; 
     }
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
 }

@@ -1,4 +1,24 @@
-        function desactivation_infos_bulles() {
+/* MENU BURGER */
+function sous_menu() {
+    var sous_menu = document.getElementById('sous_menu');
+    var btn_plus = document.getElementById('btn_plus')
+    var btn_moins = document.getElementById('btn_moins')
+
+    if (sous_menu.style.display == 'none' ||  sous_menu.style.display == '') {
+                sous_menu.style.display = 'block';
+                sous_menu.style.position = 'inherit';
+                btn_plus.style.display = 'none';
+                btn_moins.style.display = 'block';
+            }
+    else {
+                sous_menu.style.display = 'none';
+                btn_plus.style.display = 'block';
+                btn_moins.style.display = 'none';
+            }
+        }
+
+/* VALIDATION DU FORMULAIRE */
+function desactivation_infos_bulles() {
         
             var spans = document.getElementsByTagName('span'),
             spansLength = spans.length;

@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="style/themicons.css"/>
         <link rel="stylesheet" href="polices/font-awesome-4.4.0/css/font-awesome.min.css"/>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style/themicons.css"/>
     </head>
    <body>
    <div id="page">
@@ -23,8 +24,8 @@
                        <li><a href="#">Home</a></li>
                        <li><a href="#">Bio</a></li>
                        <li><a href="#">Photos</a></li>
-                       <div onclick="document.location='home.html'" class="divMusic"><li class="music"><a href="#">Music</a></div>
-                           <ul class="sous_menu">
+                       <li class="music"><a href="#">Music<button onclick="sous_menu()" id="btn_plus"></button><button onclick="sous_menu()" id="btn_moins"></button> </a></span>
+                           <ul id="sous_menu">
                                <li><a href="#">Morning star</a></li>
                                <li><a href="#">Vivienne's Omitted Line</a></li>
                                <li><a href="#">Gravitational Pull</a></li>
@@ -59,7 +60,7 @@
                         <textarea id="message" name="message"></textarea> 
                         <span class="infosBulle">Veuillez saisir votre message...</span>
                         <br>
-                        <button onclick="document.contact.submit()">Submit</button>
+                        <button class="btn_frm" onclick="document.contact.submit()">Submit</button>
                     </form>
                 </div>
                 <div class="droite">
@@ -103,15 +104,16 @@
         <footer>
             <nav id="icones">
                 <ul>
-                    <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube-play fa-lg"></i></a></li>
-                    <li><a href="#"><i class="fa fa-vimeo fa-lg"></i></a></li>
-                    <li><a href="#"><i class="fa fa-amazon fa-lg"></i></a></li>
-                    <li><a href="#"><i class="fa fa-apple fa-lg"></i></a></li>
-                    <li><a href="#"><i class="fa fa-soundcloud fa-lg"></i></a></li>
-                    <li><a href="#"><i class="fa fa-spotify fa-lg"></i></a></li> 
+                    <li><a href="#"><i class="themicon themicon-twitter"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-facebook"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-instagram"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-youtube"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-vimeo"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-amazon"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-apple"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-soundcloud"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-rdio"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-spotify"></i></a></li> 
                 </ul>
             </nav>
             <h3>Obsidian music theme by audiotheme</h2>
