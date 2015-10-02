@@ -232,11 +232,11 @@ nav#menu_principal ul li a.active {
         margin-top: -21px;
         margin-left: 30px;
         border-left: 1px solid #333;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #000;
         background: #333;
         color: #fff;
-        width: 44px;
-        height: 40px;
+        width: 43px;
+        height: 39px;
         font-size: 1.6rem;
         line-height: 43px;
     } 
@@ -250,7 +250,7 @@ nav#menu_principal ul li a.active {
     }
     nav#menu_principal ul#sous_menu li{
         background: #333;  
-        width: 269px;
+        width: 268px;
         border-left: 1px solid #000;
     }
     nav#menu_principal ul#sous_menu li a {
