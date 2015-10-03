@@ -159,15 +159,12 @@ nav#menu_principal ul li a.active {
     }
     nav#menu_principal ul#sous_menu {
         display: none;
-        position:inherit;
+        position:inherit!important;
         margin-left: 10px;
         margin-top: 48px;
         margin-bottom: -12px;
         border: 0;
         height: 130px;
-    }
-    nav#menu_principal ul#sous_menu a:hover{  
-        margin-left: 20px;
     }
     nav#menu_principal ul li:nth-child(4) {
          height: 20px;   

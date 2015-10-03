@@ -6,7 +6,6 @@ function sous_menu() {
 
     if (sous_menu.style.display == 'none' ||  sous_menu.style.display == '') {
                 sous_menu.style.display = 'block';
-                sous_menu.style.position = 'inherit';
                 btn_plus.style.display = 'none';
                 btn_moins.style.display = 'block';
             }
