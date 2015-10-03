@@ -126,6 +126,11 @@ nav#menu_principal ul li a.active {
         line-height: 20px;
         font-size: 1em;
     } 
+    /* DEBUT POUR FIREFOX */
+    html:not([lang*=""]) .burger::after{
+        margin-top: 4px;
+    }   
+    /* FIN POUR FIREFOX */
     #btn {
         display: none;
     }
@@ -186,6 +191,12 @@ nav#menu_principal ul li a.active {
         height: 41px;
         cursor: pointer;
     }
+    /* DEBUT POUR FIREFOX */
+    html:not([lang*=""]) #btn_plus:before {
+        border-top:1px solid #333;
+        margin-left: 30px;
+    }   
+    /* FIN POUR FIREFOX */
     #btn_plus:before {
         position: absolute;
         display: block;
