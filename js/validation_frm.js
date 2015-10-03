@@ -1,18 +1,21 @@
 /* MENU BURGER */
 function sous_menu() {
     var sous_menu = document.getElementById('sous_menu');
-    var btn_plus = document.getElementById('btn_plus')
-    var btn_moins = document.getElementById('btn_moins')
+    var btn_plus = document.getElementById('btn_plus');
+    var btn_moins = document.getElementById('btn_moins');
+    var child = document.getElementById('child');
 
     if (sous_menu.style.display == 'none' ||  sous_menu.style.display == '') {
                 sous_menu.style.display = 'block';
                 btn_plus.style.display = 'none';
                 btn_moins.style.display = 'block';
+                child.style.height = '146px';
             }
     else {
                 sous_menu.style.display = 'none';
                 btn_plus.style.display = 'block';
                 btn_moins.style.display = 'none';
+                child.style.height = '20px';
             }
         }
 
