@@ -218,6 +218,12 @@ nav#menu_principal ul li a.active {
         font-size: 1.6rem;
         line-height: 43px;
     } 
+/* hack Chrome / Safari */
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+    #btn_plus:before {
+        height: 39px;
+        }
+    }
     #btn_plus:hover {
         margin-top: -32px!important;   
     }
