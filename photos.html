@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Challenger 10</title>
+        <meta name="description" content="Challenger 10">
+        <link rel="stylesheet" href="style/style.css"/>
+        <!--<link rel="stylesheet" href="style/normalize.css"/>-->
+        <link rel="stylesheet" href="style/themicons.css"/>
+        <link rel="stylesheet" href="polices/font-awesome-4.4.0/css/font-awesome.min.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style/themicons.css"/>
+        <link rel="stylesheet" href="style/lightbox.css"/>
+        <link rel="stylesheet" href="style/gallery.css"/>
+    </head>
+   <body>
+   <div id="page">
+       <header>
+           <nav id="menu_principal">
+               <img src="images/fleche_haut.png" style="display:none">
+                <label for="btn" class="burger"><i class="fa fa-bars fa-lg"></i></label>
+				<input type="checkbox" id="btn" />
+                   <ul>
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">Bio</a></li>
+                       <li><a href="#">Photos</a></li>
+                       <li id = "child" class="music"><a href="#">Music<button onclick="sous_menu()" id="btn_plus"></button><button onclick="sous_menu()" id="btn_moins"></button> </a></span>
+                           <ul id="sous_menu">
+                               <li><a href="#">Morning star</a></li>
+                               <li><a href="#">Vivienne's Omitted Line</a></li>
+                               <li><a href="#">Gravitational Pull</a></li>
+                           </ul>
+                       </li>      
+                       <li><a href="#">Vidéos</a></li>
+                       <li><a href="#">News</a></li>
+                       <li><a href="#">Tour</a></li>
+                       <li><a href="contact.html" class="active">Contact</a></li>
+                   </ul>
+           </nav>
+       </header>
+        <section>
+            <h1 class="titre">Obsidian</h1>
+            <h1 class="contact">Photos</h1>
+            <div class="ligne_horizontale"></div>
+        </section>
+        <section class="photos">
+                   <div id="gallery" class="tiles">
+                        <a href="images/gallery-01.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-01.jpg"/>
+                        </a>
+                        <a href="images/gallery-02.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-02.jpg" />
+                        </a>
+                        <a href="images/gallery-03.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-03.jpg" />
+                        </a>
+                        <a href="images/gallery-04.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-04.jpg" />
+                        </a>
+                        <a href="images/gallery-05.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-05.jpg" />
+                        </a>
+                        <a href="images/gallery-06.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-06.jpg" />
+                        </a>
+                        <a href="images/gallery-07.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-07.jpg" />
+                        </a>
+                        <a href="images/gallery-08.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-08.jpg" />
+                        </a>
+                        <a href="images/gallery-09.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-09.jpg" />
+                        </a>
+                        <a href="images/gallery-10.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-10.jpg" />
+                       </a>
+                    </div>
+                <div class="clear"></div>
+                <div class="ligne_horizontale bas"></div>
+        </section>
+        <section>
+                <div class="bas_gauche">
+                    <h1 class="about">About</h1>
+                        <p id="texte_news">The Obsidian theme, like the naturally occurring volcanic glass of the same name, possesses an inherent allure that's stylish in appearance and practical in purpose. With distinctive background options and various customization possibilities, Obsidian makes it easy to create the ultimate hub for your online identity.</p>
+                </div>
+                <div class="bas_millieu">
+                        <h2>Vivienne is ommited line</h2>   
+                        <img src="images/album-03.jpg"/>
+                </div>
+                <div class="bas_droite">
+                        <h2>Welcome to our redesigned website</h2>   
+                        <p id="date_news">April 1, 2015</p> 
+                        <h2>New tour dates posted</h2>   
+                        <p id="date_news">December 16, 2014</p> 
+                        <h2>History of Popular Music</h2>   
+                        <p id="date_news">December 15, 2014</p> 
+                </div>
+                <div class="clear"></div>
+                <div class="ligne_horizontale"></div>
+        </section>
+        <footer>
+            <nav id="icones">
+                <ul>
+                    <li><a href="#"><i class="themicon themicon-twitter"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-facebook"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-instagram"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-youtube"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-vimeo"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-amazon"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-apple"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-soundcloud"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-rdio"></i></a></li>
+                    <li><a href="#"><i class="themicon themicon-spotify"></i></a></li> 
+                </ul>
+            </nav>
+            <h3>Obsidian music theme by audiotheme</h2>
+        </footer>
+    </div>
+               <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/gallery.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script>
+            $(function () {
+                $("#gallery").tilesGallery({
+                    tileMinHeight: 220,
+                    fadeInDuration: 2000
+                });
+            });            
+        </script>
+        <script src="js/validation_frm.js"></script>
+    </body>
+</html>
