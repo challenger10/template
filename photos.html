@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="polices/font-awesome-4.4.0/css/font-awesome.min.css"/>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style/themicons.css"/>
+        <link rel="stylesheet" href="style/lightbox.css"/>
+        <link rel="stylesheet" href="style/gallery.css"/>
     </head>
    <body>
    <div id="page">
@@ -23,8 +25,8 @@
                    <ul>
                        <li><a href="#">Home</a></li>
                        <li><a href="#">Bio</a></li>
-                       <li><a href="photos.html">Photos</a></li>
-                       <li id="child" class="music child"><a href="#">Music</a><button  onclick="sous_menu()" id="btn_plus"></button><button onclick="sous_menu()" id="btn_moins"></button> </span>
+                       <li><a class="active" href="photos.html">Photos</a></li>
+                       <li id = "child" class="music"><a href="#">Music<button onclick="sous_menu()" id="btn_plus"></button><button onclick="sous_menu()" id="btn_moins"></button> </a></span>
                            <ul id="sous_menu">
                                <li><a href="#">Morning star</a></li>
                                <li><a href="#">Vivienne's Omitted Line</a></li>
@@ -34,52 +36,50 @@
                        <li><a href="#">Vidéos</a></li>
                        <li><a href="#">News</a></li>
                        <li><a href="#">Tour</a></li>
-                       <li><a href="contact.html" class="active">Contact</a></li>
+                       <li><a href="contact.html">Contact</a></li>
                    </ul>
            </nav>
        </header>
         <section>
             <h1 class="titre">Obsidian</h1>
-            <h1 class="contact">Contact</h1>
+            <h1 class="contact">Photos</h1>
             <div class="ligne_horizontale"></div>
         </section>
-        <section class="formulaire">
-                <div class="gauche">
-                    <form action="index.html" method="post" name="contact" id="contact">
-                        <label for="nom">Name <span class="required"> (required)</span></label>
-                        <input type="text" id="nom" name="nom">
-                        <span class="infosBulle">Veuillez renseigner votre nom...</span>
-                        <br>
-                        <label for="email">Email <span class="required"> (required)</span></label>
-                        <input type="email" id="email" name="email"> 
-                        <span class="infosBulle">Veuillez renseigner votre email...</span>
-                        <br>
-                        <label for="site">Website</label>
-                        <input type="url" id="site" name="site">            
-                        <label for="message">Comment <span class="required"> (required)</span></label>
-                        <textarea id="message" name="message"></textarea> 
-                        <span class="infosBulle">Veuillez saisir votre message...</span>
-                        <br>
-                        <button class="btn_frm" onclick="document.contact.submit()">Submit</button>
-                    </form>
-                </div>
-                <div class="droite">
-                    <form id="rechercher" action="" method="get">
-                        <input type="search" id="nom" name="nom" placeholder="Search..."> 
-                    </form>
-                        <h1 class="news">Latest news</h1> 
-                        <h2>Welcome to our redesigned website</h2> 
-                        <p id="texte_news">Props to AudioTheme for providing the killer Obsidian WordPress theme. Feel free to poke around, str…</p>   
-                        <p id="date_news">April 1, 2015</p>
-                        <h2>New tour dates posted</h2> 
-                        <p id="texte_news">We just announced a handful of new tour dates in support of our latest album. Check ’em out he…</p>   
-                        <p id="date_news">December 16, 2014</p>
-                        <h2>History of Popular Music</h2> 
-                        <p id="texte_news">The most significant feature of the emergent popular music industry of the late 18th and earl…</p>   
-                        <p id="date_news">December 15, 2014</p>
-                </div>
+        <section class="photos">
+                   <div id="gallery" class="tiles">
+                        <a href="images/gallery-01.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-01.jpg"/>
+                        </a>
+                        <a href="images/gallery-02.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-02.jpg" />
+                        </a>
+                        <a href="images/gallery-03.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-03.jpg" />
+                        </a>
+                        <a href="images/gallery-04.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-04.jpg" />
+                        </a>
+                        <a href="images/gallery-05.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-05.jpg" />
+                        </a>
+                        <a href="images/gallery-06.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-06.jpg" />
+                        </a>
+                        <a href="images/gallery-07.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-07.jpg" />
+                        </a>
+                        <a href="images/gallery-08.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-08.jpg" />
+                        </a>
+                        <a href="images/gallery-09.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-09.jpg" />
+                        </a>
+                        <a href="images/gallery-10.jpg" data-lightbox="Photos">
+                            <img src="images/gallery-10.jpg" />
+                       </a>
+                    </div>
                 <div class="clear"></div>
-                <div class="ligne_horizontale"></div>
+                <div class="ligne_horizontale bas"></div>
         </section>
         <section>
                 <div class="bas_gauche">
@@ -119,6 +119,17 @@
             <h3>Obsidian music theme by audiotheme</h2>
         </footer>
     </div>
+               <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/gallery.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script>
+            $(function () {
+                $("#gallery").tilesGallery({
+                    tileMinHeight: 220,
+                    fadeInDuration: 2000
+                });
+            });            
+        </script>
         <script src="js/validation_frm.js"></script>
     </body>
 </html>
