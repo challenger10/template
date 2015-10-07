@@ -1,9 +1,8 @@
-
-/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*///////////////////////////////////////// PAGE CONTACT //////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////// PAGE CONTACT ////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////*/
     @font-face {
 	font-family: "themicons";
 	src: url("../polices/themicons/themicons.woff2") format("woff2"),
@@ -19,12 +18,15 @@ body {
     margin: 0;
     margin-top: 0;
     padding: 10px;
-    background: url(../images/background.jpg) no-repeat center fixed; 
+    background: black url(../images/background.jpg) no-repeat center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-position: 0% 50%;
     opacity: 1;
     filter:alpha(opacity=1);
-    box-shadow: inset 0px 0px 400px 400px rgba(0,0,0,0.7);
+    box-shadow: inset 0px 0px 400px 400px rgba(0,0,0,0.8);
 }
 #page {
     width: 1150px;
@@ -59,6 +61,12 @@ nav#menu_principal ul li a {
 }
 nav#menu_principal ul li a.active {
     font-weight: 600;
+}
+/* POUR LE LIEN MUSIC DANS LE MENU */
+.link_music {
+    position: inherit;
+    margin-right: 0px;
+    z-index: 20000;
 }
 .music:hover {
     position: relative;
@@ -529,8 +537,8 @@ nav#icones {
 }
 @media (max-width:768px) {
     nav#icones {
-        width: 100%;
-        margin-left: -10px;
+        width: 90%;
+        margin-left: 0px;
     }     
 }
 nav#icones ul {
@@ -564,11 +572,11 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
-/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*///////////////////////////////////////// PAGE PHOTOS ///////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////// PAGE PHOTOS ///////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////*/
 .photos {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -577,5 +585,201 @@ footer a {
     margin-top: 60px;
 }
 #gallery img{
-    float: left;  
+    float: left;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////// PAGE BIO ///////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+.bio {
+    width:45em;
+    margin: auto;
+    color: #ddd;
+}
+@media (max-width:768px) {
+    .bio {
+        width:100%;
+    }
+}
+.bio img {
+    max-width: 45em;
+    margin-top: 60px;
+}
+@media (max-width:768px) {
+    .bio img {
+        width:100%;
+    }
+}
+/*/////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////// PAGE MUSIC ////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////*/
+#section_music {
+    margin: 0 0 0 0;
+}
+.gauche_music {
+    margin: auto;
+    text-align: center;
+    float: left;
+    width: 33.33%; 
+}
+@media (max-width:768px) {
+    .gauche_music {
+        width:100%
+    }
+}
+.gauche_music img {
+    width: 95%;
+    margin-left: -5%;
+    margin-top: 30px;
+}
+@media (max-width:768px) {
+    .gauche_music img {
+        width:100%;
+        margin-left: 0px;
+    }
+}
+.millieu_music {
+    margin: auto;
+    text-align: center;
+    float: left;
+    width: 33.33%; 
+}
+.millieu_music h2 {
+    margin-left: 10px;
+}
+@media (max-width:768px) {
+    .millieu_music h2 {
+        margin-left: 0px;
+    }
+}
+@media (max-width:768px) {
+    .millieu_music {
+        width:100%;
+    }
+}
+.millieu_music img {
+    width: 95%;  
+    margin-top: 30px;
+}
+@media (max-width:768px) {
+    .millieu_music img {
+        width:100%;
+        margin-left: 0px;
+    }
+}
+.droite_music {
+    margin: auto;
+    text-align: center;
+    float: left;
+    width: 33.33%; 
+}
+@media (max-width:768px) {
+    .droite_music {
+        width:100%
+    }
+}
+.droite_music h2 {
+    margin-left: 20px;;
+}
+@media (max-width:768px) {
+    .droite_music h2 {
+        margin-left: 0px;
+    }
+}
+.droite_music img {
+    width: 95%;  
+    margin-right: -5%;
+    margin-top: 30px;
+}
+@media (max-width:768px) {
+    .droite_music img {
+        width:100%;
+        margin-left: -20px;
+    }
+}
+.bas_gauche_music {
+    margin: auto;
+    text-align: center;
+    float: left;
+    width: 33.33%; 
+}
+@media (max-width:768px) {
+    .bas_gauche_music {
+        width:100%
+    }
+}
+.bas_gauche_music p{
+    width: 95%;   
+}
+.bas_millieu_music {
+    margin: auto;
+    text-align: center;
+    float: left;
+    width: 33.33%; 
+}
+@media (max-width:768px) {
+    .bas_millieu_music {
+        width:100%
+    }
+}
+.bas_millieu_music h2 {
+    margin-left: 10px;
+}
+@media (max-width:768px) {
+    .bas_millieu_music h2 {
+        margin-left: 0px;
+    }
+}
+.bas_millieu_music img {
+    width: 95%; 
+    margin-bottom: 30px;
+}
+@media (max-width:768px) {
+    .bas_millieu_music img {
+        width:100%;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+}
+.bas_droite_music {
+    margin: auto;
+    text-align: center;
+    float: left;
+    width: 33.33%; 
+}
+@media (max-width:768px) {
+    .bas_droite_music {
+        width:100%
+    }
+}
+.bas_droite_music h2{
+    margin-left: 20px;   
+}
+@media (max-width:768px) {
+    .bas_droite_music h2 {
+    margin-left: 0px;  
+    }
+}
+.bas_droite_music p{
+    margin-left: 20px;   
+}
+@media (max-width:768px) {
+    .bas_droite_music p {
+    margin-left: 0px;  
+    }
+}
+.bas_droite_music a{
+    font-weight: 100;
+    color: #fff;
+}
+@media (max-width:768px) {
+    .bas_droite_music a {
+    margin: auto; 
+    }
+}
+.bas_droite_music a:hover {
+    text-decoration: underline;
 }
