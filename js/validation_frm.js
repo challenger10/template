@@ -1,3 +1,9 @@
+/* RAFRAICHISSEMENT AU REDIMENSIONNEMENT */
+window.onresize = resize;
+        function resize()
+        {
+            setTimeout(function(){location.reload()},0)
+        }
 /* MENU BURGER */
 function sous_menu() {
     var sous_menu = document.getElementById('sous_menu');
