@@ -78,7 +78,7 @@ nav#menu_principal ul li a.active {
     left: -20px;
     background: #000;
     margin-top: 10px; 
-    height: 147px;
+    height: 135px!important;
     width: 195px;
 }
 #sous_menu:before {
